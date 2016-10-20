@@ -81,7 +81,7 @@
 //	glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
 //	glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
 //	camera.SetExtrinsciParams(cameraPos, cameraFront, cameraUp);
-//	camera.SetPerspective(fov, static_cast<float>(screenWidth) / screenHeight, 0.1f, 1000.0f);
+//	camera.SetPerspective(fov, static_cast<float>(screenWidth) / screenHeight, 1.1f, 1000.0f);
 //
 //#pragma region "object_initialization"
 //	// Set the object data (buffers, vertex attributes)

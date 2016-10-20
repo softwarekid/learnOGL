@@ -95,6 +95,7 @@
     <ClCompile Include="DemoAlpha.cpp" />
     <ClCompile Include="DemoDepthTest.cpp" />
     <ClCompile Include="demoFBO.cpp" />
+    <ClCompile Include="DemoPointShadow,cpp.cpp" />
     <ClCompile Include="demoShadow.cpp" />
     <ClCompile Include="DemoStencilTest.cpp" />
     <ClCompile Include="demo_cube.cpp" />
