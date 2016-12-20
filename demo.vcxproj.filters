@@ -36,6 +36,9 @@
     <ClInclude Include="PlaneModel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="InputProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp">
@@ -93,6 +96,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DemoPointShadow,cpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="demoDeferred.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

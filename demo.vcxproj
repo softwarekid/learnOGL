@@ -82,6 +82,7 @@
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="CubeModel.h" />
+    <ClInclude Include="InputProcessor.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="PlaneModel.h" />
@@ -91,6 +92,7 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Common.cpp" />
     <ClCompile Include="demoAA.cpp" />
+    <ClCompile Include="demoDeferred.cpp" />
     <ClCompile Include="demoModel.cpp" />
     <ClCompile Include="DemoAlpha.cpp" />
     <ClCompile Include="DemoDepthTest.cpp" />
