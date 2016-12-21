@@ -103,6 +103,5 @@
     </ClCompile>
     <ClCompile Include="InputProcessor.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
+    </ClCompile>  </ItemGroup>
 </Project>
