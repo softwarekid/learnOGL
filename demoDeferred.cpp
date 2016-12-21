@@ -5,10 +5,14 @@
 
 // GLFW
 #include <GLFW/glfw3.h>
+#include "InputProcessor.h"
+#include "Camera.h"
+#include "Model.h"
+
 
 GLuint screenWidth = 800, screenHeight = 600;
 
-
+InputProcesor input;
 
 int main()
 {
@@ -23,15 +27,23 @@ int main()
 	glfwMakeContextCurrent(window);
 
 	// Set the required callback functions
-	glfwSetKeyCallback(window, key_callback);
-	glfwSetCursorPosCallback(window, mouse_callback);
-	glfwSetScrollCallback(window, scroll_callback);
+	glfwSetKeyCallback(window, input.KeyCallback);
+	glfwSetCursorPosCallback(window, input.MouseCallback);
+	glfwSetScrollCallback(window, input.ScrollCallback);
 
 	// Options
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
+	// Initialize GLEW to setup the OpenGL Function pointers
+	glewExperimental = GL_TRUE;
+	glewInit();
 
+	// Define the viewport dimensions
+	glViewport(0, 0, screenWidth, screenHeight);
 
+	glEnable(GL_DEPTH_TEST);
+
+	Model cyborg= Model("model//nanosuit//nanosuit.obj");
 
 	return 1;
 }

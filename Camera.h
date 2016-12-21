@@ -18,7 +18,7 @@ public:
 	glm::mat4 GetProjMatrix() const;
 
 	// it is a rather simple idea to compare the offset of cursor movement. Currently only works on front(0,0,-1), 
-	// which is true for most situations
+	// which is true for most cases
 	// More physically accurate method should refer to something like ray cating.
 	void SetFrontBasedOnScreenCoords(double xPos, double yPos);
 	void MoveForward(float speed);
